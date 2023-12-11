@@ -7,7 +7,7 @@ import { NextUIProvider } from "@nextui-org/react"; // NextUIProvider
 import { Provider } from "@radix-ui/react-toast";
 import { Slider } from "@nextui-org/react";
 import SliderComponent from "@/components/SliderComponent";
-// import CardSlider from "@/components/CardsSliderComponent";
+import CardSlider from "@/components/CardsSliderComponent";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
           <Toaster />
           <Navbar />
           <SliderComponent />
-          {/* <CardSlider /> */}
+          <CardSlider />
           {children}
         </Provider>
       </body>

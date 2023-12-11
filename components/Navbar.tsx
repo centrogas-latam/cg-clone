@@ -39,8 +39,8 @@ export default function App() {
             <Image
               src="centrogasvectorizado8.svg"
               alt="logo"
-              width={65}
-              height={65}
+              width={75}
+              height={75}
             />
           </Link>
         </NavbarBrand>
