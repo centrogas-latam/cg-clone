@@ -62,14 +62,10 @@ export default function App() {
 
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Button as={Link} className="bg-[#00ad10]">
-            Cotiza
-          </Button>
+          <Button className="bg-[#00ad10]">Cotiza</Button>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} className="bg-[#2245e3]">
-            Contactanos
-          </Button>
+          <Button className="bg-[#2245e3]">Contactanos</Button>
         </NavbarItem>
       </NavbarContent>
 
