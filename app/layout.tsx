@@ -1,16 +1,12 @@
-import type { Metadata } from "next";
+"use client";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Toaster } from "@/components/ui/toaster";
+import { NextUIProvider } from "@nextui-org/react"; // NextUIProvider
+import { Provider } from "@radix-ui/react-toast";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "CentroGas",
-  description: "Mantención de edificios",
-  keywords: ["gas", "nacional", "abastible"],
-};
 
 export default function RootLayout({
   children,
@@ -20,9 +16,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Toaster />
-        <Navbar />
-        {children}
+        <Provider>
+          <Toaster />
+          <Navbar />
+          {children}
+        </Provider>
       </body>
     </html>
   );

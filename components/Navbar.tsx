@@ -1,99 +1,95 @@
 "use client";
-
-import { motion } from "framer-motion";
-import { useState } from "react";
+import React from "react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarMenuToggle,
+  NavbarMenuItem,
+  NavbarMenu,
+  NavbarContent,
+  NavbarItem,
+  Link,
+  // Button,
+} from "@nextui-org/react";
 import Image from "next/image";
-import Link from "next/link";
 import { Button } from "./ui/button";
-import { Menu } from "lucide-react";
 
-let tabs = [
+const tabs = [
   { id: "inicio", label: "Inicio" },
   { id: "quienes-somos", label: "Quiénes somos" },
   { id: "soluciones", label: "Soluciones" },
   { id: "contacto", label: "Contacto" },
 ];
 
-const Navbar = () => {
-  let [activeTab, setActiveTab] = useState(tabs[0].id);
-  const [isOpen, setIsOpen] = useState(false);
+export default function App() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [activeTab, setActiveTab] = React.useState(tabs[0].id);
 
   return (
-    <nav className="sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-md transition-all px-10">
-      <div className="flex h-14 items-center justify-between border-b border-zinc-200">
-        <a href="#inicio" className="flex z-40 font-semibold w-full">
-          <Image
-            src="centrogasvectorizado8.svg"
-            alt="logo"
-            width={65}
-            height={65}
-          />
-        </a>
-        <div className="hidden md:flex space-x-1 w-full justify-center">
-          {tabs.map((tab) => (
-            <a
-              key={tab.id}
+    <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+      <NavbarContent className="sm:hidden" justify="start">
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        />
+      </NavbarContent>
+
+      <NavbarContent>
+        <NavbarBrand>
+          <Link href="/" className="flex z-40 font-semibold w-full">
+            <Image
+              src="centrogasvectorizado8.svg"
+              alt="logo"
+              width={65}
+              height={65}
+            />
+          </Link>
+        </NavbarBrand>
+      </NavbarContent>
+
+      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+        {tabs.map((tab) => (
+          <NavbarItem key={tab.id}>
+            <Link
+              color={activeTab === tab.id ? "primary" : "foreground"}
               href={`#${tab.id}`}
               onClick={() => setActiveTab(tab.id)}
-              className={`${
-                activeTab === tab.id ? "" : "hover:text-gray-500"
-              } relative rounded-none px-3 py-1.5 text-sm font-medium text-black outline-sky-400 transition focus-visible:outline-2`}
-              style={{
-                WebkitTapHighlightColor: "transparent",
-              }}
             >
-              {activeTab === tab.id && (
-                <motion.span
-                  layoutId="bubble"
-                  className="absolute inset-0 z-10 bg-black mix-blend-difference"
-                  style={{ borderRadius: 10 }}
-                  transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                />
-              )}
               {tab.label}
-            </a>
-          ))}
-        </div>
-        <div className="hidden md:flex gap-2 w-full justify-end">
-          <Button className="bg-[#00ad10]">Cotiza</Button>
-          <Button className="bg-[#2245e3]">Contactanos</Button>
-        </div>
-        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-          <Menu color="black" size={24} />
-        </button>
-      </div>
-      {isOpen && (
-        <div className="menu md:hidden">
-          {tabs.map((tab) => (
-            <a
-              key={tab.id}
+            </Link>
+          </NavbarItem>
+        ))}
+      </NavbarContent>
+
+      <NavbarContent justify="end">
+        <NavbarItem className="hidden lg:flex">
+          <Button as={Link} className="bg-[#00ad10]" variant="flat">
+            Cotiza
+          </Button>
+        </NavbarItem>
+        <NavbarItem>
+          <Button as={Link} className="bg-[#2245e3]" variant="flat">
+            Contactanos
+          </Button>
+        </NavbarItem>
+      </NavbarContent>
+
+      <NavbarMenu>
+        {tabs.map((tab, index) => (
+          <NavbarMenuItem key={tab.id}>
+            <Link
+              className="w-full"
+              color={activeTab === tab.id ? "primary" : "foreground"}
               href={`#${tab.id}`}
               onClick={() => {
                 setActiveTab(tab.id);
-                setIsOpen(false);
-              }}
-              className={`${
-                activeTab === tab.id ? "" : "hover:text-gray-500"
-              } relative rounded-none px-3 py-1.5 text-sm font-medium text-black outline-sky-400 transition focus-visible:outline-2`}
-              style={{
-                WebkitTapHighlightColor: "transparent",
+                setIsMenuOpen(false);
               }}
             >
-              {activeTab === tab.id && (
-                <motion.span
-                  layoutId="bubble"
-                  className="absolute inset-0 z-10 bg-black mix-blend-difference"
-                  style={{ borderRadius: 10 }}
-                  transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
-                />
-              )}
               {tab.label}
-            </a>
-          ))}
-        </div>
-      )}
-    </nav>
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
+    </Navbar>
   );
-};
-
-export default Navbar;
+}
