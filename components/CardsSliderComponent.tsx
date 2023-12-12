@@ -33,7 +33,7 @@ function Carousel() {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     // nextArrow: <SampleNextArrow />,
     // prevArrow: <SamplePrevArrow />,
@@ -59,7 +59,7 @@ function Carousel() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
