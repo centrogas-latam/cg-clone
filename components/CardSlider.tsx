@@ -25,7 +25,7 @@ import "slick-carousel/slick/slick-theme.css";
 //   );
 // }
 
-function Carousel() {
+function Carousel1() {
   const settings = {
     dots: true,
     infinite: true,
@@ -70,7 +70,7 @@ function Carousel() {
     <div className="w-3/4 m-auto">
       <div>
         <h1 className="text-xl font-semibold p-10 text-[#2245e3] ">
-          Servicios Destacados
+          Categorías Destacados
         </h1>
         <Slider {...settings}>
           {data.map((d) => (
@@ -100,35 +100,35 @@ function Carousel() {
 
 const data = [
   {
-    titulo: "Servicios",
+    titulo: "Categoria",
     img: "/coming.jpg",
     descripcion: "....",
   },
   {
-    titulo: "Servicios",
+    titulo: "Categoria",
     img: "/coming.jpg",
     descripcion: "....",
   },
   {
-    titulo: "Servicios",
+    titulo: "Categoria",
     img: "/coming.jpg",
     descripcion: "....",
   },
   {
-    titulo: "Servicios",
+    titulo: "Categoria",
     img: "/coming.jpg",
     descripcion: "....",
   },
   {
-    titulo: "Servicios",
+    titulo: "Categoria",
     img: "/coming.jpg",
     descripcion: "....",
   },
   {
-    titulo: "Servicios",
+    titulo: "Categoria",
     img: "/coming.jpg",
     descripcion: "....",
   },
 ];
 
-export default Carousel;
+export default Carousel1;
