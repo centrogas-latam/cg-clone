@@ -30,7 +30,7 @@ function Carousel1() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -67,27 +67,31 @@ function Carousel1() {
   };
 
   return (
-    <div className="w-3/4 m-auto">
+    <div className="md:w-3/4 w-3/4 px-1 m-auto ">
       <div>
         <h1 className="text-xl font-semibold p-10 text-[#2245e3] ">
-          Categorías Destacados
+          Categorías Destacadas
         </h1>
         <Slider {...settings}>
           {data.map((d) => (
             <div
               key={d.titulo}
-              className="bg-white h-[300px] text-black rounded-xl shadow-xl overflow-hidden"
+              className="bg-[#2245e3] transition duration-500 ease-in-out hover:shadow-2xl h-[300px] text-white rounded-xl cursor-pointer hover:bg-[#00AD10] shadow-xl overflow-hidden"
             >
-              <div className="h-full flex flex-col justify-between">
-                <div className="h-40 rounded-t-xl bg-black flex justify-center items-center">
-                  <img src={d.img} alt="" className="h-32 w-32 rounded-full" />
+              <div className="h-full flex flex-col space-between">
+                <div className="h-40 rounded-t-xl  flex justify-center items-center">
+                  <img
+                    src={d.img}
+                    alt=""
+                    className="h-full w-full px-1 py-1 rounded-t-xl"
+                  />
                 </div>
                 <div className="flex flex-col items-center justify-center gap-2 p-3">
                   <p className="text-lg font-semibold">{d.titulo}</p>
                   <p className="text-sm text-center">{d.descripcion}</p>
-                  <button className="bg-[#2245e3] text-white text-sm px-4 py-2 rounded-xl">
-                    Ver mas
-                  </button>
+                  {/* <button className="bg-[#2245e3] hover:bg-[#00AD10] text-white text-sm px-4 py-2 rounded-xl">
+                    Cotizar
+                  </button> */}
                 </div>
               </div>
             </div>

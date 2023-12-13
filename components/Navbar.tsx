@@ -62,7 +62,12 @@ export default function App() {
 
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Button className="bg-[#00ad10]">Cotiza</Button>
+          <a
+            href="https://wa.me/+56949094922"
+            className="bg-[#00AD10]  text-white text-sm px-4 py-2 rounded-lg"
+          >
+            Cotizar
+          </a>{" "}
         </NavbarItem>
         <NavbarItem>
           <Button className="bg-[#2245e3]">Contactanos</Button>
