@@ -211,7 +211,7 @@ export default function Home() {
                   reemplazo de componentes desgastados y la aplicación de
                   recubrimientos protectores.
                 </p>
-                <Button className="bg-[#2245e3]">Leer más</Button>
+                <Button className="bg-[#2245e3]">Cotizar</Button>
               </div>
               <Image
                 src="https://eihymsfhikncmipfrakl.supabase.co/storage/v1/object/public/mp3/trabajador-ponerse-guantes-protectores.jpg"

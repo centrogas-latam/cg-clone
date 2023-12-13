@@ -104,17 +104,17 @@ function Carousel1() {
 
 const data = [
   {
-    titulo: "Categoria",
+    titulo: "Aires acondicionados",
     img: "/coming.jpg",
     descripcion: "....",
   },
   {
-    titulo: "Categoria",
+    titulo: "Instalación",
     img: "/coming.jpg",
     descripcion: "....",
   },
   {
-    titulo: "Categoria",
+    titulo: "Reparación",
     img: "/coming.jpg",
     descripcion: "....",
   },

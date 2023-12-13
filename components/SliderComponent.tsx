@@ -9,11 +9,11 @@ function Card() {
   const slides = [
     {
       desktopImageUrl: "/Venta.jpg",
-      mobileImageUrl: "/vistaMovil.jpg",
+      mobileImageUrl: "mujer-mirando-lejos-tiro-detras.jpg",
     },
     {
       desktopImageUrl: "/Vista.jpg",
-      mobileImageUrl: "/vistaMovil.jpg",
+      mobileImageUrl: "mujer-mirando-lejos-tiro-detras.jpg",
     },
   ];
 
