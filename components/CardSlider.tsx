@@ -76,7 +76,7 @@ function Carousel1() {
           {data.map((d) => (
             <div
               key={d.titulo}
-              className="bg-[#2245e3] transition duration-500 ease-in-out hover:shadow-2xl h-[300px] text-white rounded-xl cursor-pointer hover:bg-[#00AD10] shadow-xl overflow-hidden"
+              className="bg-[#2245e3] transition duration-500 ease-in-out hover:shadow-2xl h-[300px] text-white rounded-xl cursor-pointer hover:bg-[#00AD10] shadow-xl"
             >
               <div className="h-full flex flex-col space-between">
                 <div className="h-40 rounded-t-xl  flex justify-center items-center">
@@ -89,9 +89,12 @@ function Carousel1() {
                 <div className="flex flex-col items-center justify-center gap-2 p-3">
                   <p className="text-sm md:text-lg font-semibold">{d.titulo}</p>
                   <p className="text-sm text-center">{d.descripcion}</p>
-                  {/* <button className="bg-[#2245e3] hover:bg-[#00AD10] text-white text-sm px-4 py-2 rounded-xl">
-                    Cotizar
-                  </button> */}
+                  <a
+                    href="https://hical.cl/"
+                    className="bg-[#2245e3] hover:bg-[white] hover:text-[black] text-white text-sm px-4 py-2 rounded-xl"
+                  >
+                    Ver mas
+                  </a>
                 </div>
               </div>
             </div>
@@ -105,33 +108,33 @@ function Carousel1() {
 const data = [
   {
     titulo: "Aires acondicionados",
-    img: "/coming.jpg",
-    descripcion: "....",
+    img: "Categorias/1 (2).jpg",
+    descripcion: "",
   },
   {
     titulo: "Instalación",
-    img: "/coming.jpg",
-    descripcion: "....",
+    img: "Categorias/4.jpg",
+    descripcion: "",
   },
   {
     titulo: "Reparación",
-    img: "/coming.jpg",
-    descripcion: "....",
+    img: "Categorias/5.jpg",
+    descripcion: "",
   },
   {
-    titulo: "Categoria",
-    img: "/coming.jpg",
-    descripcion: "....",
+    titulo: "Mantención",
+    img: "/Categorias/3 (2).jpg",
+    descripcion: "",
   },
   {
-    titulo: "Categoria",
-    img: "/coming.jpg",
-    descripcion: "....",
+    titulo: "Calefacción",
+    img: "/Categorias/2 (2).jpg",
+    descripcion: "",
   },
   {
-    titulo: "Categoria",
-    img: "/coming.jpg",
-    descripcion: "....",
+    titulo: "Encuentra mucho mas aqui",
+    img: "/Categorias/6 (2).jpg",
+    descripcion: "",
   },
 ];
 

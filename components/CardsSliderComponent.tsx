@@ -88,7 +88,7 @@ function Carousel() {
                     {d.descripcion}
                   </p>
                   <a
-                    href="https://wa.me/+56949094922"
+                    href="https://hical.cl/"
                     className="bg-[#2245e3] hover:bg-[#00AD10] text-white text-sm px-4 py-2 rounded-xl"
                   >
                     Cotizar

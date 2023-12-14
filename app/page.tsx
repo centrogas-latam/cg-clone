@@ -22,7 +22,13 @@ export default function Home() {
               comunidad.
             </p>
             <div className="flex gap-2 mb-7">
-              <Button className="bg-[#2245e3]">Descargar Brochure</Button>
+              <a
+                href="Categorias/Brochure centrogas ULTIMO-comprimido (1).pdf"
+                download
+                className="bg-[#2245e3] text-white rounded-sm p-2"
+              >
+                Descargar Brochure
+              </a>
               <Button className="border-[#00ad10]" variant="outline">
                 Contratar
               </Button>
