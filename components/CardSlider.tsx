@@ -67,7 +67,7 @@ function Carousel1() {
   };
 
   return (
-    <div className="md:w-3/4 w-3/4 px-1 m-auto ">
+    <div className="md:w-3/4 w-4/4 px-1 m-auto ">
       <div>
         <h1 className="text-xl font-semibold p-10 text-[#2245e3] ">
           Categorías Destacadas
@@ -87,7 +87,7 @@ function Carousel1() {
                   />
                 </div>
                 <div className="flex flex-col items-center justify-center gap-2 p-3">
-                  <p className="text-lg font-semibold">{d.titulo}</p>
+                  <p className="text-sm md:text-lg font-semibold">{d.titulo}</p>
                   <p className="text-sm text-center">{d.descripcion}</p>
                   {/* <button className="bg-[#2245e3] hover:bg-[#00AD10] text-white text-sm px-4 py-2 rounded-xl">
                     Cotizar
