@@ -67,7 +67,7 @@ function Carousel1() {
   };
 
   return (
-    <div className="md:w-3/4 w-4/4 px-1 m-auto ">
+    <div className="md:w-3/4 w-4/4 px-1 m-auto overflow-hidden">
       <div>
         <h1 className="text-xl font-semibold p-10 text-[#2245e3] ">
           Categorías Destacadas
