@@ -83,7 +83,7 @@ function Carousel() {
                   <img src={d.img} alt="" className="h-32 w-32 " />
                 </div>
                 <div className="flex flex-col items-center justify-center gap-2 p-3">
-                  <p className="text-sm md:text-lg font-semibold">{d.titulo}</p>
+                  <p className="text-sm md:text-sm font-semibold">{d.titulo}</p>
                   <p className="text-sm font-semibold text-[#00AD10] text-center ">
                     {d.descripcion}
                   </p>
