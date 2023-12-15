@@ -23,7 +23,7 @@ export default function Home() {
             </p>
             <div className="flex gap-2 mb-7">
               <a
-                href="Categorias/Brochure centrogas ULTIMO-comprimido (1).pdf"
+                href="Categorias/Brochure centrogas.pdf"
                 download
                 className="bg-[#2245e3] text-white rounded-sm p-2"
               >
