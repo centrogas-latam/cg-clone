@@ -87,17 +87,25 @@ function Carousel() {
                   <p className="text-sm font-semibold text-[#00AD10] text-center ">
                     {d.descripcion}
                   </p>
-                  <a
+                  {/* <a
                     href="https://hical.cl/"
                     className="bg-[#2245e3] hover:bg-[#00AD10] text-white text-sm px-4 py-2 rounded-xl"
                   >
                     Cotizar
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
           ))}
         </Slider>
+      </div>
+      <div className=" flex justify-center">
+        <a
+          href="https://hical.cl/"
+          className="bg-[#2245e3] flex mt-10  w-40  justify-center hover:bg-[#00AD10] text-white text-sm px-4 py-2 rounded-xl"
+        >
+          Ver mas
+        </a>
       </div>
     </div>
   );

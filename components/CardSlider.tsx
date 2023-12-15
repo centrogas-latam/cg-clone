@@ -108,32 +108,32 @@ function Carousel1() {
 const data = [
   {
     titulo: "Aires acondicionados",
-    img: "Categorias/1 (2).jpg",
+    img: "Categorias/1-_2_.webp",
     descripcion: "",
   },
   {
     titulo: "Instalación",
-    img: "Categorias/4.jpg",
+    img: "Categorias/4.webp",
     descripcion: "",
   },
   {
     titulo: "Reparación",
-    img: "Categorias/5.jpg",
+    img: "Categorias/5.webp",
     descripcion: "",
   },
   {
     titulo: "Mantención",
-    img: "/Categorias/3 (2).jpg",
+    img: "/Categorias/3-_2_.webp",
     descripcion: "",
   },
   {
     titulo: "Calefacción",
-    img: "/Categorias/2 (2).jpg",
+    img: "/Categorias/2-_2_.webp",
     descripcion: "",
   },
   {
     titulo: "Encuentra mucho mas aqui",
-    img: "/Categorias/6 (2).jpg",
+    img: "/Categorias/6-_2_.webp",
     descripcion: "",
   },
 ];

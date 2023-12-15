@@ -41,8 +41,8 @@ export default function Home() {
             height={100}
           />
         </div>
-
-        <div id="quienes-somos" className="my-8 md:my-44">
+        <div id="quienes-somos"></div>
+        <div className="my-8 md:my-44">
           <h1 className="text-xl md:text-3xl font-semibold flex gap-1 w-full justify-center mb-4 md:mb-8">
             Quienes <span className="text-[#2245e3]">somos</span>
           </h1>
@@ -107,8 +107,11 @@ export default function Home() {
             />
           </div>
         </div>
-
-        <div id="soluciones">
+        <div id="soluciones"></div>
+        <br />
+        <br />
+        <br />
+        <div>
           <h1 className="text-3xl font-semibold flex gap-1 w-full justify-center mb-24">
             Nuestras <span className="text-[#00ad10]">soluciones</span>
           </h1>
@@ -228,7 +231,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         <div className="mt-8 md:mt-40 flex flex-col md:flex-row">
           <div className="w-full md:w-1/3">
             <Image
@@ -291,8 +293,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <div id="contacto" className="md:flex mt-40 gap-8">
+        <div id="contacto"></div>
+        <br />
+        <br />
+        <br />
+        <div className="md:flex mt-40 gap-8">
           {/* Sección del Formulario */}
           <div className="w-full md:w-1/2">
             <h1 className="text-2xl font-semibold mb-5">Contáctanos</h1>
@@ -381,8 +386,14 @@ export default function Home() {
           <h3 className="font-semibold mb-4">Contacto</h3>
           <ul className="space-y-2">
             <li>Las Condes, Santiago</li>
-            <li>+569 2802 3866</li>
-            <li>contacto@centrogaslatam.cl</li>
+            <li>
+              <a href="https://wa.me/+56949094922">📲 +56949094922</a>
+            </li>
+            <li>
+              <a href="mailto:contacto@centrogaslatam.cl">
+                📧 contacto@centrogaslatam.cl
+              </a>
+            </li>
           </ul>
         </div>
 

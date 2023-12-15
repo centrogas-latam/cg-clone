@@ -15,7 +15,7 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 
 const tabs = [
-  { id: "inicio", label: "Inicio" },
+  // { id: "inicio", label: "Inicio" },
   { id: "quienes-somos", label: "Quiénes somos" },
   { id: "soluciones", label: "Soluciones" },
   { id: "contacto", label: "Contacto" },
