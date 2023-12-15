@@ -3,28 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// function SampleNextArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{ ...style, display: "block", background: "red" }}
-//       onClick={onClick}
-//     />
-//   );
-// }
-
-// function SamplePrevArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={className}
-//       style={{ ...style, display: "block", background: "green" }}
-//       onClick={onClick}
-//     />
-//   );
-// }
-
 function Carousel() {
   const settings = {
     dots: true,
@@ -35,8 +13,7 @@ function Carousel() {
     autoplay: true,
     autoplaySpeed: 3000,
     cssEase: "linear",
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow />,
+
     //Responsive
     responsive: [
       {
@@ -76,7 +53,7 @@ function Carousel() {
           {data.map((d) => (
             <div
               key={d.titulo}
-              className="bg-white h-[300px] text-black rounded-xl shadow-xl overflow-hidden"
+              className="bg-white h-[300px]  text-black rounded-xl shadow-xl overflow-hidden"
             >
               <div className="h-full flex flex-col justify-between">
                 <div className="h-40 rounded-t-xl flex justify-center items-center">
@@ -87,12 +64,6 @@ function Carousel() {
                   <p className="text-sm font-semibold text-[#00AD10] text-center ">
                     {d.descripcion}
                   </p>
-                  {/* <a
-                    href="https://hical.cl/"
-                    className="bg-[#2245e3] hover:bg-[#00AD10] text-white text-sm px-4 py-2 rounded-xl"
-                  >
-                    Cotizar
-                  </a> */}
                 </div>
               </div>
             </div>

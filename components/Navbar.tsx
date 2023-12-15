@@ -61,17 +61,22 @@ export default function App() {
       </NavbarContent>
 
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
+        <NavbarItem className=" lg:flex">
           <a
             href="https://wa.me/+56949094922"
-            className="bg-[#00AD10]  text-white text-sm px-4 py-2 rounded-lg"
+            className="bg-[#00AD10] hover:[bg-#2245e3] text-white text-sm px-4 py-2 rounded-lg"
           >
             Cotizar
-          </a>{" "}
+          </a>
         </NavbarItem>
-        <NavbarItem>
-          <Button className="bg-[#2245e3]">Contactanos</Button>
-        </NavbarItem>
+        {/* <NavbarItem>
+          <a
+            href="https://wa.me/+56949094922"
+            className="bg-[#2245e3] text-white text-sm px-4 py-2 rounded-lg"
+          >
+            Contactános
+          </a>
+        </NavbarItem> */}
       </NavbarContent>
 
       <NavbarMenu>
