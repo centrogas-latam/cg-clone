@@ -9,6 +9,7 @@ import { Slider } from "@nextui-org/react";
 import SliderComponent from "@/components/SliderComponent";
 import CardSlider from "@/components/CardsSliderComponent";
 import Carousel1 from "@/components/CardSlider";
+import SliderBrands from "@/components/SliderBrands";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -23,6 +24,7 @@ export default function RootLayout({
           <Toaster />
           <Navbar />
           <SliderComponent />
+          <SliderBrands />
           <CardSlider />
           <Carousel1 />
           {children}
