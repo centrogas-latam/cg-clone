@@ -129,7 +129,12 @@ export default function Home() {
                   fallas. Trabajamos para garantizar un ambiente seguro y
                   cumplir con los estándares de calidad.
                 </p>
-                <Button className="bg-[#2245e3]">Cotizar</Button>
+                <a
+                  href="https://wa.me/+56949094922"
+                  className="text-sm px-4 py-3 text-white  rounded-lg bg-[#2245e3] hover:bg-[#00a10d]"
+                >
+                  Cotizar
+                </a>
               </div>
               <Image
                 src="https://eihymsfhikncmipfrakl.supabase.co/storage/v1/object/public/mp3/IMG_8061.jpg"
@@ -158,7 +163,12 @@ export default function Home() {
                   rendimiento óptimo, contribuyendo así a la eficiencia
                   operativa y ahorro de energía.
                 </p>
-                <Button className="bg-[#00ad10]">Cotizar</Button>
+                <a
+                  href="https://wa.me/+56949094922"
+                  className="text-sm px-4 py-3 text-white  rounded-lg bg-[#00a10d] hover:bg-[#2245e3]"
+                >
+                  Cotizar
+                </a>{" "}
               </div>
             </div>
 
@@ -175,7 +185,12 @@ export default function Home() {
                   esté listo para entrar en acción en caso de cortes de energía,
                   brindando tranquilidad a nuestros clientes.
                 </p>
-                <Button className="bg-[#2245e3]">Cotizar</Button>
+                <a
+                  href="https://wa.me/+56949094922"
+                  className="text-sm px-4 py-3 text-white  rounded-lg bg-[#2245e3] hover:bg-[#00a10d]"
+                >
+                  Cotizar
+                </a>{" "}
               </div>
               <Image
                 src="https://eihymsfhikncmipfrakl.supabase.co/storage/v1/object/public/mp3/generador-electrico-diferencias.webp"
@@ -204,7 +219,12 @@ export default function Home() {
                   genere la energía esperada y contribuya a la sostenibilidad
                   ambiental de manera óptima.
                 </p>
-                <Button className="bg-[#00ad10]">Cotizar</Button>
+                <a
+                  href="https://wa.me/+56949094922"
+                  className="text-sm px-4 py-3 text-white  rounded-lg bg-[#00a10d] hover:bg-[#2245e3]"
+                >
+                  Cotizar
+                </a>{" "}
               </div>
             </div>
             <div className="flex flex-col md:flex-row gap-4 md:gap-36 mt-8 md:mt-24">
@@ -220,7 +240,12 @@ export default function Home() {
                   reemplazo de componentes desgastados y la aplicación de
                   recubrimientos protectores.
                 </p>
-                <Button className="bg-[#2245e3]">Cotizar</Button>
+                <a
+                  href="https://wa.me/+56949094922"
+                  className="text-sm px-4 py-3 text-white  rounded-lg bg-[#2245e3] hover:bg-[#00a10d]"
+                >
+                  Cotizar
+                </a>{" "}
               </div>
               <Image
                 src="https://eihymsfhikncmipfrakl.supabase.co/storage/v1/object/public/mp3/trabajador-ponerse-guantes-protectores.jpg"
