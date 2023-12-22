@@ -108,32 +108,32 @@ function Carousel1() {
 const data = [
   {
     titulo: "Aires acondicionados",
-    img: "Categorias/1-_2_.webp",
+    img: "https://vjheesgjtnxlkkbwwapy.supabase.co/storage/v1/object/sign/IMG/aire.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJTUcvYWlyZS5qcGciLCJpYXQiOjE3MDMyNjE2MjYsImV4cCI6MTczNDc5NzYyNn0.MFW1oQeffWf5vnM6y5OAoEQMMCpyiqWbDXzV7Shfrz8&t=2023-12-22T16%3A13%3A48.444Z",
     descripcion: "",
   },
   {
     titulo: "Instalación",
-    img: "Categorias/4.webp",
+    img: "https://vjheesgjtnxlkkbwwapy.supabase.co/storage/v1/object/sign/IMG/instalacion.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJTUcvaW5zdGFsYWNpb24uanBnIiwiaWF0IjoxNzAzMjYxNjU5LCJleHAiOjE3MzQ3OTc2NTl9.83mjjwZLd_KqfsOmft8ATbxcrRHsbD6OZMOA2Hr_CXQ&t=2023-12-22T16%3A14%3A21.239Z",
     descripcion: "",
   },
   {
     titulo: "Reparación",
-    img: "Categorias/5.webp",
+    img: "https://vjheesgjtnxlkkbwwapy.supabase.co/storage/v1/object/sign/IMG/reparacion.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJTUcvcmVwYXJhY2lvbi5qcGciLCJpYXQiOjE3MDMyNjE3NzMsImV4cCI6MTczNDc5Nzc3M30.IQm3K84qBFpE8yGQnp2NEmFUn6kWOj7kUVvMqk5BhQM&t=2023-12-22T16%3A16%3A15.494Z",
     descripcion: "",
   },
   {
     titulo: "Mantención",
-    img: "/Categorias/3-_2_.webp",
+    img: "https://vjheesgjtnxlkkbwwapy.supabase.co/storage/v1/object/sign/IMG/mantencion.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJTUcvbWFudGVuY2lvbi5qcGciLCJpYXQiOjE3MDMyNjE2NzUsImV4cCI6MTczNDc5NzY3NX0.lXpaaThTuxD863F5OB-np51CniM1JT-_a1akatylji8&t=2023-12-22T16%3A14%3A37.825Z",
     descripcion: "",
   },
   {
     titulo: "Calefacción",
-    img: "/Categorias/2-_2_.webp",
+    img: "https://vjheesgjtnxlkkbwwapy.supabase.co/storage/v1/object/sign/IMG/calefaccion.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJTUcvY2FsZWZhY2Npb24uanBnIiwiaWF0IjoxNzAzMjYxNjQ0LCJleHAiOjE3MzQ3OTc2NDR9.BnAPXiCOEMAygA8GSrR8Sm4zDjM04Tc7GCWLcF7Verw&t=2023-12-22T16%3A14%3A06.469Z",
     descripcion: "",
   },
   {
     titulo: "Encuentra mucho mas aqui",
-    img: "/Categorias/6-_2_.webp",
+    img: "https://vjheesgjtnxlkkbwwapy.supabase.co/storage/v1/object/sign/IMG/reparacion.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJJTUcvcmVwYXJhY2lvbi5qcGciLCJpYXQiOjE3MDMyNjE3NzMsImV4cCI6MTczNDc5Nzc3M30.IQm3K84qBFpE8yGQnp2NEmFUn6kWOj7kUVvMqk5BhQM&t=2023-12-22T16%3A16%3A15.494Z",
     descripcion: "",
   },
 ];
